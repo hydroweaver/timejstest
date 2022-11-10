@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id="main1">0</h1>
+        <h1 id="main2">0</h1>
+        <script>
+
+            for(var i=0;i<10;i++){
+                setTimeout(() => {
+                    console.log(i);
+                    document.getElementById("main1").innerHTML = i;
+                }, 1000*i);
+            }
+
+            for(var i=0;i<10;i++){
+                increment(i);
+            }
+
+            function increment(x){
+                setTimeout(() => {
+                    console.log(x);
+                    document.getElementById("main2").innerHTML = x;
+                }, 1000*x);
+            }
+        </script>
+    </body>
+</html>
